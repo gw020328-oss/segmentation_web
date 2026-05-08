@@ -5,3 +5,22 @@ node_modules
 *.pyc
 __pycache__
 .DS_Store
+
+# 루트의 분석 스크립트 - Vercel이 Python Function으로 오인식하므로 제외
+index.py
+pipeline.py
+*.ipynb
+stealth_crawler.py
+
+# 데이터/이미지 파일 (대용량)
+*.csv
+*.xlsx
+*.xls
+*.png
+*.jpg
+*.jpeg
+downloaded_images/
+processed_2_blurry/
+processed_2_clusters/
+processed_2_high_quality/
+processed_2_unique/
