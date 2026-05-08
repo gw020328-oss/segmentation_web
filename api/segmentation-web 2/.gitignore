@@ -22,3 +22,18 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ── 보안: 실제 API 키가 담긴 .env 파일은 절대 커밋하지 않음 ──
+backend/.env
+.env
+
+# Python
+backend/.venv/
+backend/__pycache__/
+backend/*.pyc
+*.pyc
+__pycache__/
+*.pyo
+
+# Vercel
+.vercel
