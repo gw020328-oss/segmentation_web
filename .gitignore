@@ -6,11 +6,12 @@ node_modules
 __pycache__
 .DS_Store
 
-# 루트의 분석 스크립트 - Vercel이 Python Function으로 오인식하므로 제외
-index.py
-pipeline.py
+# ── Python 파일 전체 제외 (Vercel이 Python Function으로 오인식 방지) ──
+*.py
+!api/segmentation-web 2/backend/main.py
+
+# Jupyter 노트북
 *.ipynb
-stealth_crawler.py
 
 # 데이터/이미지 파일 (대용량)
 *.csv
@@ -24,3 +25,7 @@ processed_2_blurry/
 processed_2_clusters/
 processed_2_high_quality/
 processed_2_unique/
+
+# 로그
+*.log
+stealth.log
